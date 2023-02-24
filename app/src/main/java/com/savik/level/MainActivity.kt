@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
                 val rotate = 270 + degree
                 lRotation.rotation = rotate
                 val rData = 90 + degree
-                val color = if(rData.toInt() == 0){
+                val color = if(rData.toInt() == 0 || rData.toInt() == 180 || rData.toInt() == 90 || rData.toInt() == 270){
                     Color.GREEN
                 } else {
                     Color.RED
